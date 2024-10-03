@@ -1,0 +1,177 @@
+{
+	"info": {
+		"_postman_id": "4097ae1c-9faf-4164-a752-d76111dadd06",
+		"name": "Employee",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "32653133",
+		"_collection_link": "https://www.postman.com/karann09/983340c6-cd5f-459a-92bc-2c56522ebc81/collection/2f515yg/employee?action=share&source=collection_link&creator=32653133"
+	},
+	"item": [
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Mikey009\",\r\n    \"password\": \"Cyrusxz\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/api/auth/register"
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Mikey009\",\r\n    \"password\": \"Cyrusxz\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/api/auth/login"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "EmployeeInfo",
+			"item": [
+				{
+					"name": "create employee",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Mikey",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "Mikey123@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "mobileNo",
+									"value": "9834784422",
+									"type": "text"
+								},
+								{
+									"key": "designation",
+									"value": "HR",
+									"type": "text"
+								},
+								{
+									"key": "courses[]",
+									"value": "MCA",
+									"type": "text"
+								},
+								{
+									"key": "gender",
+									"value": "M",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/karan/Downloads/Mug_of_Rentaro.png"
+								}
+							]
+						},
+						"url": "http://localhost:3000/api/employees/create"
+					},
+					"response": []
+				},
+				{
+					"name": "getInfo",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:3000/api/employees/getInfo"
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Rentaro",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "Rentaro123@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "mobileNo",
+									"value": "9834784453",
+									"type": "text"
+								},
+								{
+									"key": "designation",
+									"value": "HR",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "courses[]",
+									"value": "MCA",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "gender",
+									"value": "M",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/karan/Downloads/Mug_of_Rentaro.png",
+									"disabled": true
+								}
+							]
+						},
+						"url": "http://localhost:3000/api/employees/66fd0d42fcd8845757f8fe8b"
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:3000/api/employees/66fd0d42fcd8845757f8fe8b"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
