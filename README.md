@@ -13,7 +13,9 @@ This repository contains the backend API for the Employee Management System.
 - **Node.js**
 - **Express**
 - **MongoDB**
-
+- **Cloudinary**
+- **Postman**
+  
 ## Installation
 
 1. **Clone the repository:**
@@ -42,3 +44,4 @@ This repository contains the backend API for the Employee Management System.
 # Postman Collection
 
 A Postman collection is provided to test the API. Import the Employee_Management_System_Postman_Collection.json file into Postman for easy testing.
+For further details and expected outputs, refer to the [Employee Management System Backend Output](https://drive.google.com/file/d/19dJsqL7siB3pqcdwTW2iA9xPqLMeSlrM/view?usp=sharing).
